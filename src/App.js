@@ -5,6 +5,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import HeroSection from './components/HeroSection';
 import { Container } from '@mui/material';
 import CakeSection from './components/CakeSection';
+import ContactUs from './components/ContactUs';
 
 const theme = createTheme({
   palette: {
@@ -20,6 +21,7 @@ function App() {
       <Container >
         <HeroSection />
         <CakeSection />
+        <ContactUs />
       </Container>
     </ThemeProvider>
   )
