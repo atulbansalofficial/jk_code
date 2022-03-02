@@ -19,8 +19,8 @@ const CakeSection = () => {
    <Stack direction={"row"} justifyContent="space-evenly" sx={{ flexWrap: "wrap" }}>
 
     {
-     cakes.map((cake) => {
-      return (<Card sx={{ maxWidth: "300px", mb: 2, height: "16rem", width: "16rem" }}>
+     cakes.map((cake,i) => {
+      return (<Card key={i} sx={{ maxWidth: "300px", mb: 2, height: "16rem", width: "16rem" }}>
        <CardMedia
         component="img"
         alt="green iguana"
