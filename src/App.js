@@ -1,20 +1,27 @@
 import React from 'react';
-import Typography from '@mui/material/Typography'
 
+import NavBar from './components/NavBar';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import HeroSection from './components/HeroSection';
+import { Container } from '@mui/material';
+import CakeSection from './components/CakeSection';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#864313",
+    },
+  },
+});
 function App() {
   return (
-    <>
-      <Typography variant='h1'>h1 Hadding</Typography>
-      <Typography variant='h2'>h2 Hadding</Typography>
-      <Typography variant='h3'>h3 Hadding</Typography>
-      <Typography variant='h4'>h4 Hadding</Typography>
-      <Typography variant='h5'>h5 Hadding</Typography>
-      <Typography variant='h6'>h6 Hadding</Typography>
-      <Typography variant='subtitle1'>subtitle1 Hadding</Typography>
-      <Typography variant='subtitle2'>subtitle2 Hadding</Typography>
-      <Typography variant='body1'>span1 Hadding</Typography>
-      <Typography variant='body2'>span2 Hadding</Typography>
-    </>
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <Container >
+        <HeroSection />
+        <CakeSection />
+      </Container>
+    </ThemeProvider>
   )
 }
 
