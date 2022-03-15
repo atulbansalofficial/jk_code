@@ -5,8 +5,9 @@ import Cake from '../img/cake.png'
 const HeroSection = () => {
 
     const Callus = event => {
-        
-        
+        alert("HI")
+
+
     }
 
     return (
@@ -27,7 +28,7 @@ const HeroSection = () => {
                     size='large'
                     variant="contained"
                     onClick={Callus}
-                >Call us 
+                >Call us
 
                 </Button>
             </Grid>

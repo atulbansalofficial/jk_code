@@ -26,7 +26,7 @@ function DialogBox() {
     return (
         <div>
 
-            <Button onClick={handleClickOpen('body')}>scroll=body</Button>
+            <Button variant='contained' onClick={handleClickOpen('body')}>Order Now</Button>
             <Dialog
                 open={open}
                 onClose={handleClose}

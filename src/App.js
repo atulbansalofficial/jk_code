@@ -20,7 +20,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <NavBar />
       <Container >
-
         <HeroSection />
         <DialogBox />
         <CakeSection />
