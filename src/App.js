@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection';
 import { Container } from '@mui/material';
 import CakeSection from './components/CakeSection';
 import ContactUs from './components/ContactUs';
+import DialogBox from './components/dialogs/DialogBox';
 
 const theme = createTheme({
   palette: {
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <Container >
         <HeroSection />
+        <DialogBox />
         <CakeSection />
         <ContactUs />
       </Container>
